@@ -31,6 +31,8 @@
 
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
+      width: 100%;
     }
 
     body {
@@ -39,6 +41,8 @@
       color: var(--text-primary);
       line-height: 1.6;
       overflow-x: hidden;
+      width: 100%;
+      position: relative;
     }
 
     .serif {
@@ -119,6 +123,9 @@
     .content {
       position: relative;
       z-index: 10;
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
     }
 
     /* Navigation */
@@ -219,6 +226,9 @@
       align-items: center;
       padding: 8rem 4rem;
       position: relative;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
     }
 
     .hero-content {
@@ -529,6 +539,8 @@
       padding: 8rem 4rem;
       max-width: 1400px;
       margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .section-header {
@@ -786,6 +798,8 @@
       padding: 8rem 4rem;
       text-align: center;
       position: relative;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .cta-section::before {
@@ -826,6 +840,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .footer-links {
@@ -926,10 +942,12 @@
         position: relative;
         right: auto;
         top: auto;
+        left: 0;
         transform: none;
         width: 280px;
         height: 280px;
-        margin-top: 2rem;
+        margin: 2rem auto 0;
+        max-width: 90vw;
       }
 
       .hero-visual:hover {
@@ -1047,7 +1065,8 @@
       .hero-visual {
         width: 240px;
         height: 240px;
-        margin-top: 1.5rem;
+        margin: 1.5rem auto 0;
+        max-width: 85vw;
       }
 
       .stats {
