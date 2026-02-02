@@ -878,26 +878,43 @@
 
     @media (max-width: 900px) {
       nav {
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
       }
 
       .nav-center {
         display: none;
       }
 
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.85rem;
+      }
+
       .hero {
-        padding: 7rem 2rem 4rem;
+        padding: 6rem 1.5rem 4rem;
         flex-direction: column;
         text-align: center;
+        min-height: auto;
       }
 
       .hero-content {
         max-width: 100%;
       }
 
+      .hero h1 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+        margin-bottom: 1rem;
+      }
+
       .hero p {
+        font-size: 1.1rem;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 2rem;
       }
 
       .hero-cta {
@@ -910,9 +927,9 @@
         right: auto;
         top: auto;
         transform: none;
-        width: 300px;
-        height: 300px;
-        margin-top: 3rem;
+        width: 280px;
+        height: 280px;
+        margin-top: 2rem;
       }
 
       .hero-visual:hover {
@@ -925,20 +942,247 @@
         gap: 2rem;
       }
 
+      .stat {
+        min-width: 120px;
+      }
+
+      .stat-value {
+        font-size: 2rem;
+      }
+
       .section {
-        padding: 5rem 2rem;
+        padding: 4rem 1.5rem;
+      }
+
+      .section h2 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+      }
+
+      .section-desc {
+        font-size: 1rem;
       }
 
       .services-grid,
       .pricing-grid,
       .process-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .service-card {
+        padding: 2rem;
+      }
+
+      .cta-section {
+        padding: 4rem 1.5rem;
+      }
+
+      .cta-section h2 {
+        font-size: clamp(2rem, 8vw, 3rem);
+      }
+
+      .cta-section p {
+        font-size: 1.1rem;
       }
 
       footer {
         flex-direction: column;
         gap: 1.5rem;
         text-align: center;
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 1rem;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+      }
+
+      .logo-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+      }
+
+      .btn {
+        padding: 0.7rem 1.25rem;
+        font-size: 0.8rem;
+      }
+
+      .hero {
+        padding: 5rem 1rem 3rem;
+      }
+
+      .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.85rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 12vw, 2.8rem);
+        line-height: 1.2;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.75rem;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-visual {
+        width: 240px;
+        height: 240px;
+        margin-top: 1.5rem;
+      }
+
+      .stats {
+        gap: 1.5rem;
+        width: 100%;
+      }
+
+      .stat {
+        flex: 1;
+        min-width: 100px;
+      }
+
+      .stat-value {
+        font-size: 1.75rem;
+      }
+
+      .stat-label {
+        font-size: 0.75rem;
+      }
+
+      .section {
+        padding: 3rem 1rem;
+      }
+
+      .section-header {
+        margin-bottom: 3rem;
+      }
+
+      .section-label {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.85rem;
+      }
+
+      .section h2 {
+        font-size: clamp(1.75rem, 9vw, 2.25rem);
+        margin-bottom: 0.75rem;
+      }
+
+      .section-desc {
+        font-size: 0.95rem;
+      }
+
+      .services-grid {
+        gap: 1rem;
+      }
+
+      .service-card {
+        padding: 1.75rem;
+      }
+
+      .service-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.35rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .service-card h3 {
+        font-size: 1.2rem;
+      }
+
+      .service-card p {
+        font-size: 0.9rem;
+      }
+
+      .process-grid {
+        gap: 2rem;
+      }
+
+      .process-number {
+        width: 70px;
+        height: 70px;
+        font-size: 1.35rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .process-step h4 {
+        font-size: 1rem;
+      }
+
+      .process-step p {
+        font-size: 0.85rem;
+      }
+
+      .cta-section {
+        padding: 3rem 1rem;
+      }
+
+      .cta-section h2 {
+        font-size: clamp(1.75rem, 9vw, 2.5rem);
+        margin-bottom: 0.75rem;
+      }
+
+      .cta-section p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .cta-section p br {
+        display: none;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .footer-copy {
+        font-size: 0.85rem;
+      }
+
+      .orb-1,
+      .orb-2,
+      .orb-3 {
+        filter: blur(60px);
+      }
+
+      .orb-1 {
+        width: 400px;
+        height: 400px;
+      }
+
+      .orb-2 {
+        width: 350px;
+        height: 350px;
+      }
+
+      .orb-3 {
+        width: 300px;
+        height: 300px;
       }
     }
   </style>
